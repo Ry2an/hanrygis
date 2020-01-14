@@ -1,0 +1,1 @@
+source("C:\\HanryGIS\\China-Province\\Bar.R",local=TRUE)

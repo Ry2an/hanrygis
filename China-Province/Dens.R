@@ -1,0 +1,8 @@
+library(MASS)
+get_point<-read.csv("C://HanryGIS//China-Province/Points.csv",sep=",",header=T)
+heightDens<-kde2d(get_point$lon,get_point$lan,n=100)
+setwd("c://HanryGIS//China-Province")
+image(c(1:100),c(1:100), heightDens$z,col=heat.colors(100,alpha=1),axes=F,xlab="",ylab="")
+jpeg(file="density.jpeg")
+image(c(1:100),c(1:100), heightDens$z,col=heat.colors(100,alpha=1),axes=F,xlab="",ylab="")
+dev.off()
