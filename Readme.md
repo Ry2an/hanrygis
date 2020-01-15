@@ -21,8 +21,11 @@ The baisc solution for this is:
 ## Environment
 
 > python 2.7
+
 > wxPython
+
 > python PIL
+
 > R package "sp" and "maptools"
 
 ## Unfinished part
